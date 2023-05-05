@@ -31,6 +31,12 @@
     - L: (left)  Izquierda
     - R: (right) Derecha
 
+4. Recuerde que las salidas en su orden están dadas por:
+    - Búsqueda por profundidad
+    - Búsqueda por amplitud
+    - Profundidad iterativa
+
+
 
 #### Ejecución
 ```sh
