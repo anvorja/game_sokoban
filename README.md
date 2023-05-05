@@ -11,7 +11,7 @@
 1. Ejecutar el archivo `build-docker.sh` y posteriormente `run-docker.sh`
 
 
-2. El archivo `run.sh` o `run-docker.sh` reciben como parametro la salida del archivo de nivel a probar.
+2. El archivo `run.sh` o `run-docker.sh` reciben como parámetro la salida del archivo de nivel a probar.
 
    Así:
    
@@ -25,7 +25,7 @@
    
    Los archivos `.txt` de los niveles deben estar en el mismo directorio de `game_sokoban`
 
-3. Los movimientos validos son:
+3. Los movimientos válidos son:
     - U: (up)    Arriba
     - D: (down)  Abajo
     - L: (left)  Izquierda
