@@ -22,6 +22,8 @@
    `sudo sh run.sh nivel2.txt` 
 
    No olvide estar como administrador o sudo
+   
+   Los archivos `.txt` de los niveles deben estar en el mismo directorio de `game_sokoban`
 
 3. Los movimientos validos son:
     - U: (up)    Arriba
@@ -38,5 +40,10 @@ $ sh run-docker.sh nivel2.txt
 ó
 
 $ sh run.sh nivel1.txt
+
+Como SUDO
+
+$ sudo sh build-docker.sh
+$ sudo sh run-docker.sh nivel2.txt
 
 ```
