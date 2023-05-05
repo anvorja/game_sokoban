@@ -1,0 +1,11 @@
+{
+  "name": "sokoban",
+  "version": "1.0.0",
+  "main": "sokoban.js",
+  "scripts": {
+    "start": "node sokoban.js"
+  },
+  "dependencies": {
+
+  }
+}
