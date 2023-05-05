@@ -277,6 +277,11 @@ class Sokoban {
             return null;
         }
 
+        // Verifica si se ha alcanzado la profundidad máxima.
+        if (level > 64) {
+            return null;
+        }
+        
         // Marca el tablero actual como visitado.
         visited.add(cur);
 
