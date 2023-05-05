@@ -1,10 +1,10 @@
 
 # Integrantes
-#### 202040507-Carlos Andres Borja
-#### 202041790-Deisy Catalina Melo
-#### 201941427-Marcelo Alejandro García
+#### 202040507 - Carlos Andres Borja
+#### 202041790 - Deisy Catalina Melo
+#### 201941427 - Marcelo Alejandro García
 #
-#
+
 #### Compilación
 
 
