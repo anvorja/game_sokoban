@@ -400,6 +400,11 @@ class Sokoban {
             const { boardObj, path } = queue.shift();
             const { cur, x, y, level } = boardObj;
 
+            // Verifica si la profundidad máxima se ha alcanzado.
+            if (level >= 64) {
+                continue;
+            }
+            
             // Luego, se verifica si el estado actual del tablero (cur) ya ha sido visitado.
             // Si es así, se pasa al siguiente elemento de la cola.
             if (visited.has(cur)) {
