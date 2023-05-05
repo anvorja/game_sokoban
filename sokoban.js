@@ -401,7 +401,7 @@ class Sokoban {
             const { cur, x, y, level } = boardObj;
 
             // Verifica si la profundidad máxima se ha alcanzado.
-            if (level >= 64) {
+            if (level > 64) {
                 continue;
             }
             
