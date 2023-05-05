@@ -35,6 +35,8 @@
     - Búsqueda por profundidad
     - Búsqueda por amplitud
     - Profundidad iterativa
+    
+5. Es importante tener en cuenta que el programa asume que el archivo de texto sigue el formato especificado en el enunciado del problema y que no contiene errores ni caracteres dieferentes a los esperados.  
 
 
 
