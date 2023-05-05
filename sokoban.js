@@ -1,4 +1,10 @@
-
+/**
+ * @date 04-05-2023
+ * @authors
+ * borja.carlos@correounivalle.edu.co
+ * deisy.melo@correounivalle.edu.co
+ * garcia.marcelo@correounivalle.edu.co
+ */
 
 /**
  * Clase Board que representa un tablero.
@@ -244,9 +250,28 @@ class Sokoban {
      */
     solveSinglePrint(dirs, dirLabels) {
 
-        console.log(this.algDepth(dirs, dirLabels).path.join(''));
-        console.log(this.algAmplitude(dirs, dirLabels).path.join(''));
-        console.log(this.algIterativeDepth(dirs, dirLabels, 64).path.join(''));
+
+        // Si el Path resulta 'null', significa que no se encontró solución al problema con el algoritmo.
+        try {
+            let bfs = this.algDepth(dirs, dirLabels).path.join('');
+            console.log(bfs);
+        }
+        catch (bfsNullPath) {
+            console.log('No hay solución');
+        }
+        try {
+            let dfs = this.algAmplitude(dirs, dirLabels).path.join('');
+            console.log(dfs);
+        }
+        catch (dfsNullPath) {
+            console.log('No hay solución');
+        }
+        try {
+            let ids = this.algIterativeDepth(dirs, dirLabels, 64).path.join('');
+            console.log(ids);
+        } catch (idsNullPath) {
+            console.log('No hay solución');
+        }
 
         // Formato especial #2
         // console.log("profundidad:".padEnd(20), this.algDepth(dirs, dirLabels).path.join(''));
@@ -281,7 +306,7 @@ class Sokoban {
         if (level > 64) {
             return null;
         }
-        
+
         // Marca el tablero actual como visitado.
         visited.add(cur);
 
@@ -404,7 +429,7 @@ class Sokoban {
             if (level > 64) {
                 continue;
             }
-            
+
             // Luego, se verifica si el estado actual del tablero (cur) ya ha sido visitado.
             // Si es así, se pasa al siguiente elemento de la cola.
             if (visited.has(cur)) {
